@@ -1,0 +1,11 @@
+Volunteer class
+(a) every volunteer must have — id (int) – if possible system generated, name (string),
+is_available (bool), DOB (Date)
+(b) has suitable parameterized constructor
+(c) has a method get_details to fetch volunteer details (ret type – string)
+(d) has method validate_inputs (name doesn’t contain special chars, yearDOB < current
+year, etc...) return type Volunteer
+(e) is written populate_data() function (not less than 5 items)
+(f) is written driven menu with options: Volunteer Registration, Volunteer Details, Quit
+(g) when user select option Quit details of volunteers it is written to the file volunteers.ser
+file.
