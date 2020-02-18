@@ -1,9 +1,7 @@
 package com.app.core;
 
-import java.io.Serializable;
 import java.time.LocalDate;
-
-public class Voulenteers implements Serializable{
+public class Voulenteers{
 	private Integer Id;
 	private String name;
 	private Boolean isAvailable;

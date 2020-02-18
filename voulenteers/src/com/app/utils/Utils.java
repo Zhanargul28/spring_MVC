@@ -1,9 +1,9 @@
 package com.app.utils;
-
+import java.util.Collections;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Comparator;
 import com.app.core.Voulenteers;
 
 import cust_excs.AccountHandlingException;
@@ -35,5 +35,27 @@ public class Utils{
 				throw new AccountHandlingException("Duplicate Account!!!!");
 		return true;
 	}
+	public static List<Voulenteers> getSorted(ArrayList<Voulenteers> voulenteers,Comparator<Voulenteers> comp) {
+        Collections.sort(voulenteers, comp);
+        return voulenteers;
+    }
+	public static List<Voulenteers> getSortByName(ArrayList<Voulenteers> voulenteers) {
+		 
+        return getSorted(voulenteers, new Comparator<Voulenteers>() {
+            @Override
+            public int compare(Voulenteers o1, Voulenteers o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
+	}
+ 
+	public static List<Voulenteers> getSortBydOB(ArrayList<Voulenteers> voulenteers) {
+        return getSorted(voulenteers, new Comparator<Voulenteers>() {
+            @Override
+            public int compare(Voulenteers o1, Voulenteers o2) {
+                return o1.getDOB().compareTo(o2.getDOB());
+            }
+        });
+    }
 	
 }
