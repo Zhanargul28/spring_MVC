@@ -9,3 +9,4 @@ year, etc...) return type Volunteer
 (f) is written driven menu with options: Volunteer Registration, Volunteer Details, Quit
 (g) when user select option Quit details of volunteers it is written to the file volunteers.ser
 file.
+//tested
