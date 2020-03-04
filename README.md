@@ -1,5 +1,11 @@
-# spring_MVC
-Кашувай Жанаргүл
-Spring MVC фреймворк көмегімен web порталын құру
-С помощью фреймворка Spring MVC создание web портала
-Using the Spring MVC framework creating a web portal
+# Web portal for hire employees and find jobs
+
+##  To deploy page use Eclipse:
+```sh
+$ git clone https://github.com/zhus-dika/spring_MVC.git
+```
+## Open Eclipse 
+```
+import project
+configure libs
+```
