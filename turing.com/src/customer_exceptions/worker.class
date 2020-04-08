@@ -1,0 +1,45 @@
+public class Worker {
+    public String Name;
+    public String Surname;
+    public int BirthYear;
+    public String Address;
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getSurname() {
+        return Surname;
+    }
+
+    public int getBirthYear() {
+        return BirthYear;
+    }
+
+    public String getAdress() {
+        return Address;
+    }
+
+    public void setAdress(String adress) {
+        Address = adress;
+    }
+
+    public void setBirthYear(int birthYear) {
+        BirthYear = birthYear;
+    }
+
+
+    public void setSurname(String surname) {
+        Surname = surname;
+    }
+
+
+    public Worker() {
+        Name="";
+        Surname = "";
+        BirthYear = 0;…
+
