@@ -1,0 +1,48 @@
+import java.time.Year;
+import java.util.ArrayList;
+
+public class Department
+{
+    public Department()
+    {
+        Name = "";
+        CreationYear = Year.now().getValue();
+
+        Workers = new ArrayList<Worker>();
+    }
+    public Department(String name, int creationYear, ArrayList<Worker> workers)
+    {
+        Name = name;
+        CreationYear = creationYear;
+        Workers = workers;
+    }
+
+    public String Name;
+    public int CreationYear ;
+    public ArrayList<Worker> Workers ;
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public ArrayList<Worker> getWorkers() {
+        return Workers;
+    }
+
+    public int getCreationYear() {
+        return CreationYear;
+    }
+
+    public int WorkersCount(){
+        return this.Workers.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Отдел {Name}\nДата создания: {CreationYear}\nКоличество сотрудников: {WorkersCount()}\n";
+    }
+}
