@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Company
+{
+    public String Name;
+    public ArrayList<Department> Departments ;
+
+    public Company()
+    {
+        Name = " ";
+        Departments = new ArrayList<Department>();
+    }
+    public Company(String name, ArrayList<Department> departments)
+    {
+        Name = name;
+        Departments = departments;
+    }
+
+
+    public int DepartmentsCount() {
+        return this.Departments.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Компания {Name}\nКоличество отделов: {DepartmentsCount()}\n";
+    }
+
+}
